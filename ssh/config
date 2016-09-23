@@ -1,0 +1,17 @@
+# PERSONAL Github
+Host gh
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_gh
+
+# PERSONAL Bitbucket
+Host bb
+	HostName bitbucket.org
+	User git
+	IdentityFile ~/.ssh/id_rsa_bb
+
+# WORK Bitbucket
+Host work
+	HostName bitbucket.org
+	User git
+	IdentityFile ~/.ssh/id_rsa_work
