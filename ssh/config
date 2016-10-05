@@ -15,3 +15,8 @@ Host work
 	HostName bitbucket.org
 	User git
 	IdentityFile ~/.ssh/id_rsa_work
+
+# CDF Labs (UofT)
+Host cdf
+        HostName cdf.utoronto.ca
+	User limonica
