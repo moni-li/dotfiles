@@ -1,0 +1,23 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Monica
+	email = monica.amanda.li@gmail.com
+[alias]
+	lg = log --pretty=format:'%C(yellow)%h%x09 %ad%Cred%d %Creset%s%Cblue [%cn]' --decorate --date=relative
+	prloc = !"f() { git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d; }; f"
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
+	st = status
+	co = checkout
+	aliasb = !"f() { git symbolic-ref refs/heads/$1 refs/heads/$2; }; f"
+	rm-aliasb = !"f() { git symbolic-ref -d refs/heads/$1; }; f"
+	upremote = remote update origin
+	prfetch = fetch -p origin
+	nbr = checkout -b
+	unpushed = log --branches --not --remotes
+	brlist = branch -a
+	brl = branch -a
+	
+
+# alias branch name: git symbolic-ref refs/heads/<name> refs/heads/<original>
+# delete symbolic-ref: git symbolic-ref -d <name>
