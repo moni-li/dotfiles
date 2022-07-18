@@ -1,22 +1,21 @@
 # PERSONAL Github
+
 Host gh github.com
-	HostName github.com
-	User git
-	IdentityFile ~/.ssh/id_rsa_gh
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_rsa_gh
 
 # PERSONAL Bitbucket
+
 Host bb bitbucket.org
-	HostName bitbucket.org
-	User git
-	IdentityFile ~/.ssh/id_rsa_bb
+HostName bitbucket.org
+User git
+IdentityFile ~/.ssh/id_rsa_bb
 
 # WORK Bitbucket
-Host work
-	HostName bitbucket.org
-	User git
-	IdentityFile ~/.ssh/id_rsa_work
 
-# CDF Labs (UofT)
-Host cdf
-        HostName cdf.utoronto.ca
-	User limonica
+Host work
+HostName work_hostname
+User work_username
+IdentityFile ~/.ssh/id_rsa_work
+IdentitiesOnly yes
